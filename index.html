@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elisiya App | Download APK</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #0f1c2e, #1b2c40);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      color: #e8efff;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 45px 60px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.08);
+      animation: float 3s ease-in-out infinite;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    h1 {
+      font-size: 34px;
+      margin-bottom: 8px;
+      color: #d7e3ff;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      color: #b9c7e6;
+    }
+
+    .download-btn {
+      display: inline-block;
+      text-decoration: none;
+      background: #4fa3ff;
+      color: #0f1c2e;
+      padding: 14px 32px;
+      border-radius: 35px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #368eed;
+    }
+
+    .links {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .link-item {
+      font-size: 16px;
+      color: #9bb7d9;
+      text-decoration: none;
+    }
+
+    .link-item:hover {
+      color: #c7ddff;
+    }
+
+    /* floating particles */
+    .dot {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.10);
+      border-radius: 50%;
+      animation: floatUp 9s infinite ease-in;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(100vh) scale(0.3); opacity: 0.6; }
+      100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- background particles -->
+  <script>
+    for (let i = 0; i < 50; i++) {
+      let d = document.createElement("div");
+      d.classList.add("dot");
+      let size = Math.random() * 40 + 20;
+      d.style.width = size + "px";
+      d.style.height = size + "px";
+      d.style.left = Math.random() * 100 + "%";
+      d.style.animationDuration = (Math.random() * 7 + 4) + "s";
+      document.body.appendChild(d);
+    }
+  </script>
+
+  <div class="card">
+    <h1>📱 Elisiya App</h1>
+    <p>Download the latest APK version of Elisiya.</p>
+
+    <a class="download-btn"
+       href="https://github.com/Patil-Sarthak/elisiya/releases/download/v1.0/Elisiya.apk">
+      ⬇ Download APK (v1.0)
+    </a>
+
+    <div class="links">
+      <a class="link-item" href="https://github.com/Patil-Sarthak/elisiya" target="_blank">
+        🔗 View Elisiya Repository
+      </a>
+
+      <a class="link-item" href="https://github.com/Patil-Sarthak" target="_blank">
+        👤 Visit My GitHub Profile
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
